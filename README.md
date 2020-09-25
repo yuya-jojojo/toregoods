@@ -1,6 +1,6 @@
 ## 画像イメージ
 
-![Uploading スクリーンショット 2020-09-25 23.15.49.png…]()
+<img width="1440" alt="スクリーンショット 2020-09-25 23 15 49" src="https://user-images.githubusercontent.com/71754476/94281440-9abe8100-ff89-11ea-89d6-e575147f0cd4.png">
 
 
 ## バージョン
