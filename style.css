@@ -1,0 +1,476 @@
+body{
+  margin:0;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+#contents{
+  overflow: hidden;
+  margin: 20px auto;
+}
+a{
+  color:#222222;
+  text-decoration: none;
+}
+/*==============
+ヘッダー
+===============*/
+header{
+  background:#FFCC00;
+  width:100%;
+  height: 100px;
+  overflow: hidden;
+  margin-bottom:10px;
+}
+header.float-active{
+  transition:.3s;
+  background:rgba(255,255,255,0.9);
+}
+header h1{
+  float:left;
+  font-family: 'Lato', sans-serif;
+  font-size:35px;
+  line-height:100px;
+  margin:0;
+}
+/*==============
+ヒーローバナー
+===============*/
+.hero{
+  background-image: url("img/hero.jpg");
+  background-attachment:fixed;
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:500px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.hero__title{
+  color:#fff;
+}
+/*==================
+ナビ
+==================*/
+nav a{
+  text-decoration: none;
+  font-weight:bold;
+  color:black;
+}
+.top-nav{
+  float:right;
+  overflow: hidden;
+  width:500px;
+  height:100px;
+  position:relative;
+}
+.top-nav ul{
+  position: absolute;
+  top:25px;
+  right:0;
+  list-style: none;
+}
+.top-nav ul li{
+  float:right;
+  margin-right:10px;
+}
+/*==========================
+パネル
+==========================*/
+.panel-list{
+  overflow: hidden;
+  margin-right: -15px;
+}
+.panel{
+  width:25%;
+  float:left;
+  box-sizing:border-box;
+  min-height:185px;
+  line-height: 1.2em;
+  margin-bottom:15px;
+  padding-right:15px;
+  transition: all .3s;
+}
+.panel:hover{
+  transition:all .3s;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+.panel-list > .panel img{
+  width:100%;
+  max-height:160px;
+}
+.panel-title{
+  margin:0;
+}
+.price{
+  font-weight:bold;
+  font-family: 'Lato', sans-serif;
+}
+/*==================
+ボタン
+===================*/
+.btn{
+padding:15px 20px;
+text-decoration:none
+}
+.btn.btn-primary{
+  background:#000;
+  color:#fff;
+}
+.btn.btn-mid{
+  max-width:150px;
+
+}
+/*=====================
+サイドバー
+======================*/
+#sidebar{
+  float:left;
+  min-height:600px;
+  background:#f6f5f4;
+  margin-right:10px;
+  width:200px;
+  box-sizing: border-box;
+  padding:15px;
+}
+#sidebar .title{
+  font-size:14px;
+}
+#sidebar a{
+  display:block;
+  margin-bottom:15px;
+}
+.selectbox{
+
+}
+#sidebar select{
+  width:100%;
+  padding:10px;
+  font-size:14px;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+#sidebar .title{
+  margin:15px auto;
+}
+/*====================
+
+=====================*/
+input[type="submit"]{
+  font-size:14px;
+  width:100%;
+  background:#000;
+  color:#fff;
+  margin-top:10px;
+  padding:15px 30px;
+}
+
+.search-title{
+  overflow:hidden;
+  background: #f6f5f4;
+  margin-bottom:30px;
+  padding:5px 15px;
+  height:40px;
+  line-height: 40px;
+}
+.search-left{
+  float:left;
+}
+.search-right{
+  float:right;
+}
+/*======================
+レイアウト
+=======================*/
+.site-width{
+  width:980px;
+  margin:0 auto;
+}
+#main{
+  min-height:600px;
+  float:left;
+}
+#main .title{
+  font-size:28px;
+  padding: 10px 0;
+}
+.page-1colum #main{
+  width:100%;
+}
+.page-2colum #main{
+  width:760px;
+}
+.page-title{
+  font-size:32px;
+  text-align: center;
+  margin-bottom:50px;
+}
+.page-logined #main{
+  border:5px solid #C0C0C0;
+  box-sizing: border-box;
+}
+.page-logined #sidebar{
+  margin:0 0 0 20px;
+}
+.badge{
+  padding: 5px 15px;
+  background: #99CCFF;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  vertical-align: middle;
+  position: relative;
+  top: -4px;
+}
+/*=======================
+productDetail
+========================*/
+.product-img-container{
+  overflow:hidden;
+}
+.img-main{
+  width:700px;
+  float:left;
+  padding-right:10px;
+  box-sizing:border-box;
+}
+.img-main img{
+  width:100%;
+}
+.img-sub{
+  width:280px;
+  float:left;
+  padding:15px;
+  box-sizing: border-box;
+  background:#f6f5f4;
+}
+.img-sub img{
+  width:100%;
+  margin-bottom:10px;
+}
+.js__img__sub__blk:not(.active){
+  opacity:0.5;
+}
+.img-sub img:last-child{
+  margin-bottom:0;
+}
+.product-detail{
+  width: 100%;
+  background: #f6f5f4;
+  padding: 15px;
+  min-height: 150px;
+  margin-top: 10px;
+}
+.product-buy{
+  overflow: hidden;
+  margin-top:10px;
+  height: 70px;
+  line-height: 70px;
+  margin-bottom: 10px;
+}
+.product-buy .item-left{
+  float:left;
+}
+.product-buy .item-right{
+  float:right;
+}
+.product-buy .btn{
+  border:none;
+  padding:10px 30px;
+  font-size:18px;
+}
+.product-buy .price{
+  margin-right:30px;
+  font-size:32px;
+}
+
+/*=====================
+お気に入りアイコン
+======================*/
+.icn-like{
+  float:right;
+  color:#ddd;
+}
+.icn-like:hover{
+  cursor:pointer
+}
+.icn-like.active{
+  color:#fe8a8b;
+}
+/*=====================
+ページネイション
+======================*/
+.pagination{
+  overflow: hidden;
+  position:relative;
+}
+.pagination-list{
+  float:left;
+  list-style: none;
+  position:relative;
+  left:30%;
+  padding-left: 0;
+}
+.list-item{
+  float:left;
+  margin-right:5px;
+  position:relative;
+  left:-30px;
+}
+.list-item:last-child{
+  margin-right: 0;
+}
+.pagination .list-item a{
+  display:block;
+  padding:5px 10px;
+  background:#eee;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+.pagination .list-item.active a {
+  background: #333;
+  color: white;
+}
+/*=====================
+フォーム
+======================*/
+.page-1colum .form-container{
+  margin: 80px auto;
+}
+label{
+  display: block;
+}
+.form{
+  border:1px solid #f1f1f1;
+  width:400px;
+  margin:0 auto;
+  padding:30px;
+  border:none;
+}
+form .title{
+  text-align: center;
+  margin-bottom:40px;
+}
+input[type="text"], input[type="password"], input[type="number"], .form select, textarea{
+  width:100%;
+  height:60px;
+  font-size:18px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding:10px;
+  background:#f6f5f4;
+  border:none;
+  display:block;
+}
+input[type="checkbox"]{
+  width:18px;
+  height:18px;
+  vertical-align: middle;
+}
+input[type="submit"]:hover{
+  cursor:pointer;
+}
+.form .btn-container{
+  overflow:hidden;
+}
+.form .btn{
+  float:right;
+}
+label.err input, label.err textarea{
+  background:#FFB6C1;
+}
+.form .img-drop-container{
+  float:left;
+  width:33%;
+  padding-right:15px;
+  box-sizing:border-box;
+}
+.form .area-drop{
+  height:140px;
+  background:#f6f5f4;
+  margin-bottom:15px;
+  color:#ccc;
+  position:relative;
+  text-align:center;
+  line-height:140px;
+}
+.form .input-file{
+  opacity:0;
+  position:absolute;
+  top:0;
+  left:0;
+  height:140px;
+  width:100%;
+}
+.form .form-group{
+  overflow:hidden;
+}
+.form .price-form{
+  width:150px;
+  float:left;
+}
+.form .price{
+  float:left;
+  font-size: 20px;
+  position: relative;
+  top: 35px;
+  left: 5px;
+}
+/* テーブルリスト
+========================================*/
+
+.list-table > table {
+  width: 100%;
+  border-spacing: 0 5px;
+}
+
+.list-table th,
+.list-table td {
+  padding: 5px;
+}
+.list-table th{
+  text-align: left;
+}
+
+.list-table > .table > tbody td {
+  border-right: none;
+  background: #f6f5f4;
+}
+.list{
+  margin:0 10px 10px 0;
+}
+/*====================
+エラー
+====================*/
+.form .area-msg{
+  color:#FF0000;
+  padding-bottom: 15px;
+}
+/*=====================
+メッセージ
+======================*/
+.msg-slide{
+  background:rgba(51,153,255,0.6);
+  width:100%;
+  text-align:center;
+  position:fixed;
+  top:0;
+  height:40px;
+  line-height:40px;
+  font-size:16px;
+}
+/*======================
+フッター
+======================*/
+footer{
+  background: #FFCC00;
+  padding:15px;
+  width:100%;
+  font-size:12px;
+  text-align: center;
+}
